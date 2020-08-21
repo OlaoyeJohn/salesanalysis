@@ -31,7 +31,7 @@ body {
 
 /* ----NAV START---- */
 .navbar-custom {
-  background-color: #fff;
+  background-color: #2d4059;
 }
 
 .navbar-brand{float:center;height:10px;padding:15x;font-size:18px;line-height:20px;}
@@ -59,7 +59,7 @@ body {
  
 
   /* Visual */
-  background: #4aaaa5;
+  background: #ea5455;
 }
 
 /* Logo hover state */
@@ -80,13 +80,13 @@ body {
 
 /* Nav element hover state */
 .navbar-default .navbar-nav > li > a:hover {
-  color: #4aaaa5;
+  color: #ea5455;
 }
 
 /* Media query for nav */
 @media only screen and (max-width: 767px) {
   .navbar-header {
-    background-color: #4aaaa5;
+    background-color: #ea5455;
   }
 
   #logo {
@@ -107,7 +107,7 @@ body {
     color: #fff;
 
     /* Visual */
-    background: #4aaaa5;
+    background: #ea5455;
   }
 }
 
@@ -122,7 +122,7 @@ body {
   /* Typography */
   font-size: 32px;
   font-weight: bold;
-  color: #4aaaa5;
+  color: #ea5455;
 }
 
 .description-content {
@@ -198,7 +198,7 @@ body {
   /* Typography */
   font-size: 25px;
   font-weight: bold;
-  color: #4aaaa5;
+  color: #ea5455;
 }
 
 .imageNav-photo {
@@ -215,7 +215,7 @@ body {
 
 .imageNav-photo.active {
   /* Visuals */
-  border: 2px solid #4aaaa5;
+  border: 2px solid #ea5455;
 }
 
 #images {
@@ -241,7 +241,7 @@ body {
   /* Typography */
   font-size: 20px;
   font-weight: bold;
-  color: #4aaaa5;
+  color: #ea5455;
   text-align: center;
 }
 
@@ -259,7 +259,7 @@ body {
   margin-top: 30px;
 
   /* Visual */
-  background-color: #666;
+  background-color: #2d4059;
 }
 
 .text-muted-footer {
@@ -276,7 +276,7 @@ body {
   padding-top: 3px;
 
   /* Visual */
-  background-color: #4aaaa5;
+  background-color: #ea5455;
 }
 
 /* ----FOOTER END---- */
