@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Visualization Dashboard</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css" media="screen">
+
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="index.html" id="logo">Analysis</a>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analysis <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                 <li><a href="p_region.html">Profit By Region</a></li>
+                  <li><a href="s_p_category.html">Sales and Profit By Category</a></li>
+                  <li><a href="s_p_analysis.html">Sales and Profit Analysis</a></li>
+                  <li><a href="s_p_state.html">Sales and Profit By States In the U.S</a></li>
+                </ul>
+              </li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="data.html">Data Section</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Start of container -->
+    <div class="container">
+      <article class="description-content row">
+        <div class="col-xs-12">
+          <h1 class="description-header">Data Used for Analysis</h1>
+          <hr class="description-hr"/>
+          <p class="description-text">Tables used for the visualizations, the dataset was sourced from the Super Store dataset, it has been heavily reconstructed to fit the analysis.</p>
+          <div class="table-responsive">
+            <h3>Table 1: Sales & Profit By Category.</h3>
+            <table border="1" class="dataframe">
+              <thead>
+                <tr style="text-align: right;">
+                  <th>Category</th>
+                  <th>Sales</th>
+                  <th>Profit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Office Supplies</td>
+                  <td>114281.505</td>
+                  <td>19672.9161</td>
+                </tr>
+                <tr>
+                  <td>Technology</td>
+                  <td>827184.953</td>
+                  <td>142157.1452</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <br>
+          <div class="table-responsive">
+            <h3>Table 2: Sales & Profit By Region.</h3>
+            <table border="1" class="dataframe">
+              <thead>
+                <tr style="text-align: right;">
+                  <th>Region</th>
+                  <th>Sales</th>
+                  <th>Profit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Central</td>
+                  <td>195683.177</td>
+                  <td>31201.0108</td>
+                </tr>
+                <tr>
+                  <td>East</td>
+                  <td>302009.569</td>
+                  <td>56594.1355</td>
+                </tr>
+                <tr>
+                  <td>South</td>
+                  <td>159794.330</td>
+                  <td>20857.1484</td>
+                </tr>
+                <tr>
+                  <td>West</td>
+                  <td>283979.382</td>
+                  <td>53177.7666</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <br>
+          <div class="table-responsive">
+            <h3>Table 3: Sales & Profit By State.</h3>
+            <table border="1" class="dataframe">
+              <thead>
+                <tr style="text-align: right;">
+                  <th>County</th>
+                  <th>Sales</th>
+                  <th>Profit</th>
+                  <th>latitude</th>
+                  <th>longitude</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Arizona</td>
+                  <td>12525.32</td>
+                  <td>195.76</td>
+                  <td>34.05</td>
+                  <td>-111.09</td>
+                </tr>
+                <tr>
+                  <td>Arkansas</td>
+                  <td>3925.25</td>
+                  <td>1261.44</td>
+                  <td>35.20</td>
+                  <td>-91.83</td>
+                </tr>
+                <tr>
+                  <td>California</td>
+                  <td>184098.42</td>
+                  <td>36696.10</td>
+                  <td>36.78</td>
+                  <td>-119.42</td>
+                </tr>
+                <tr>
+                  <td>Colorado</td>
+                  <td>12333.62</td>
+                  <td>-3330.16</td>
+                  <td>39.55</td>
+                  <td>-105.78</td>
+                </tr>
+                <tr>
+                  <td>Connecticut</td>
+                  <td>4270.21</td>
+                  <td>1252.80</td>
+                  <td>41.60</td>
+                  <td>-73.09</td>
+                </tr>
+                <tr>
+                  <td>Delaware</td>
+                  <td>14702.64</td>
+                  <td>6283.42</td>
+                  <td>38.91</td>
+                  <td>-75.53</td>
+                </tr>
+                <tr>
+                  <td>District of Columbia</td>
+                  <td>1402.66</td>
+                  <td>657.43</td>
+                  <td>38.91</td>
+                  <td>-77.03</td>
+                </tr>
+                <tr>
+                  <td>Florida</td>
+                  <td>50634.07</td>
+                  <td>890.53</td>
+                  <td>27.66</td>
+                  <td>-81.52</td>
+                </tr>
+                <tr>
+                  <td>Georgia</td>
+                  <td>17490.70</td>
+                  <td>5458.24</td>
+                  <td>32.16</td>
+                  <td>-82.91</td>
+                </tr>
+                <tr>
+                  <td>Idaho</td>
+                  <td>1065.34</td>
+                  <td>158.17</td>
+                  <td>44.07</td>
+                  <td>-114.74</td>
+                </tr>
+                <tr>
+                  <td>Illinois</td>
+                  <td>32972.41</td>
+                  <td>2335.36</td>
+                  <td>40.63</td>
+                  <td>-89.40</td>
+                </tr>
+                <tr>
+                  <td>Indiana</td>
+                  <td>30828.86</td>
+                  <td>12413.36</td>
+                  <td>40.55</td>
+                  <td>-85.60</td>
+                </tr>
+                <tr>
+                  <td>Iowa</td>
+                  <td>1160.78</td>
+                  <td>321.48</td>
+                  <td>41.88</td>
+                  <td>-93.10</td>
+                </tr>
+                <tr>
+                  <td>Kansas</td>
+                  <td>931.00</td>
+                  <td>197.94</td>
+                  <td>39.01</td>
+                  <td>-98.48</td>
+                </tr>
+                <tr>
+                  <td>Kentucky</td>
+                  <td>13906.26</td>
+                  <td>4527.82</td>
+                  <td>37.84</td>
+                  <td>-84.27</td>
+                </tr>
+                <tr>
+                  <td>Louisiana</td>
+                  <td>2848.18</td>
+                  <td>1019.70</td>
+                  <td>31.24</td>
+                  <td>-92.15</td>
+                </tr>
+                <tr>
+                  <td>Maine</td>
+                  <td>863.21</td>
+                  <td>278.56</td>
+                  <td>45.25</td>
+                  <td>-69.45</td>
+                </tr>
+                <tr>
+                  <td>Maryland</td>
+                  <td>5784.10</td>
+                  <td>1831.27</td>
+                  <td>39.05</td>
+                  <td>-76.64</td>
+                </tr>
+                <tr>
+                  <td>Massachusetts</td>
+                  <td>9074.38</td>
+                  <td>2755.49</td>
+                  <td>42.41</td>
+                  <td>-71.38</td>
+                </tr>
+                <tr>
+                  <td>Michigan</td>
+                  <td>20636.68</td>
+                  <td>5908.68</td>
+                  <td>44.31</td>
+                  <td>-85.60</td>
+                </tr>
+                <tr>
+                  <td>Minnesota</td>
+                  <td>5700.93</td>
+                  <td>1888.42</td>
+                  <td>46.73</td>
+                  <td>-94.69</td>
+                </tr>
+                <tr>
+                  <td>Mississippi</td>
+                  <td>3437.88</td>
+                  <td>1163.35</td>
+                  <td>32.35</td>
+                  <td>-89.40</td>
+                </tr>
+                <tr>
+                  <td>Missouri</td>
+                  <td>10756.95</td>
+                  <td>4240.76</td>
+                  <td>37.96</td>
+                  <td>-91.83</td>
+                </tr>
+                <tr>
+                  <td>Montana</td>
+                  <td>3662.93</td>
+                  <td>1523.04</td>
+                  <td>46.88</td>
+                  <td>-110.36</td>
+                </tr>
+                <tr>
+                  <td>Nebraska</td>
+                  <td>3805.77</td>
+                  <td>1136.75</td>
+                  <td>41.49</td>
+                  <td>-99.90</td>
+                </tr>
+                <tr>
+                  <td>Nevada</td>
+                  <td>5232.99</td>
+                  <td>540.06</td>
+                  <td>38.80</td>
+                  <td>-116.42</td>
+                </tr>
+                <tr>
+                  <td>New Hampshire</td>
+                  <td>3670.08</td>
+                  <td>912.03</td>
+                  <td>43.19</td>
+                  <td>-71.57</td>
+                </tr>
+                <tr>
+                  <td>New Jersey</td>
+                  <td>18897.12</td>
+                  <td>5463.98</td>
+                  <td>40.06</td>
+                  <td>-74.41</td>
+                </tr>
+                <tr>
+                  <td>New Mexico</td>
+                  <td>1697.93</td>
+                  <td>337.28</td>
+                  <td>34.97</td>
+                  <td>-105.03</td>
+                </tr>
+                <tr>
+                  <td>New York</td>
+                  <td>142578.63</td>
+                  <td>46463.58</td>
+                  <td>43.30</td>
+                  <td>-74.22</td>
+                </tr>
+                <tr>
+                  <td>North Carolina</td>
+                  <td>30620.22</td>
+                  <td>-3090.35</td>
+                  <td>35.76</td>
+                  <td>-79.02</td>
+                </tr>
+                <tr>
+                  <td>Ohio</td>
+                  <td>40981.79</td>
+                  <td>-11990.88</td>
+                  <td>40.42</td>
+                  <td>-82.91</td>
+                </tr>
+                <tr>
+                  <td>Oklahoma</td>
+                  <td>7859.67</td>
+                  <td>2052.48</td>
+                  <td>35.01</td>
+                  <td>-97.09</td>
+                </tr>
+                <tr>
+                  <td>Oregon</td>
+                  <td>6357.32</td>
+                  <td>180.44</td>
+                  <td>43.80</td>
+                  <td>-120.55</td>
+                </tr>
+                <tr>
+                  <td>Pennsylvania</td>
+                  <td>47165.42</td>
+                  <td>-2511.53</td>
+                  <td>41.20</td>
+                  <td>-77.19</td>
+                </tr>
+                <tr>
+                  <td>Rhode Island</td>
+                  <td>10476.63</td>
+                  <td>4598.68</td>
+                  <td>41.58</td>
+                  <td>-71.48</td>
+                </tr>
+                <tr>
+                  <td>South Carolina</td>
+                  <td>1591.62</td>
+                  <td>453.59</td>
+                  <td>33.84</td>
+                  <td>-81.16</td>
+                </tr>
+                <tr>
+                  <td>South Dakota</td>
+                  <td>809.26</td>
+                  <td>246.30</td>
+                  <td>43.97</td>
+                  <td>-99.90</td>
+                </tr>
+                <tr>
+                  <td>Tennessee</td>
+                  <td>6722.27</td>
+                  <td>269.20</td>
+                  <td>35.52</td>
+                  <td>-86.58</td>
+                </tr>
+                <tr>
+                  <td>Texas</td>
+                  <td>68046.25</td>
+                  <td>-2929.00</td>
+                  <td>31.97</td>
+                  <td>-99.90</td>
+                </tr>
+                <tr>
+                  <td>Utah</td>
+                  <td>4091.48</td>
+                  <td>1133.28</td>
+                  <td>39.32</td>
+                  <td>-111.09</td>
+                </tr>
+                <tr>
+                  <td>Vermont</td>
+                  <td>2142.70</td>
+                  <td>599.31</td>
+                  <td>44.56</td>
+                  <td>-72.58</td>
+                </tr>
+                <tr>
+                  <td>Virginia</td>
+                  <td>28617.89</td>
+                  <td>8903.62</td>
+                  <td>37.43</td>
+                  <td>-78.66</td>
+                </tr>
+                <tr>
+                  <td>Washington</td>
+                  <td>52914.04</td>
+                  <td>15743.80</td>
+                  <td>47.75</td>
+                  <td>-120.74</td>
+                </tr>
+                <tr>
+                  <td>Wisconsin</td>
+                  <td>12174.61</td>
+                  <td>3388.47</td>
+                  <td>43.78</td>
+                  <td>-88.79</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!-- End of container -->
+
+    <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        &copy; By John Olaoye - <a href="#" >Linkedin Page</a>
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
